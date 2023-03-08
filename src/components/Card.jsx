@@ -14,11 +14,7 @@ function Card(props) {
 
       <div className="card__picContainer">
         <div className="card__status"></div>
-        <img
-          src={`../../public/images/${props.image}`}
-          alt=""
-          className="card__pic"
-        />
+        <img src={`./images/${props.image}`} alt="" className="card__pic" />
       </div>
 
       <div className="card__typography">
