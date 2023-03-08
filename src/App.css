@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.App {
+  max-width: 550px;
+  box-shadow: 1px 3px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+/* NAVIGATION SECTION  */
+.nav {
+  display: flex;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+/* HERO SECTION  */
+.hero {
+  padding: 30px;
+}
+
+.hero__gridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+
+.hero__grid {
+  width: 100%;
+  max-width: 400px;
+}
+
+.hero__typography {
+  text-align: left;
+  line-height: 110%;
+}
+
+.hero__header {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero__paragraph {
+  width: 70%;
+  font-size: 16px;
+}
+
+/* CARD SECTION */
+
+.card__container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.card__container::-webkit-scrollbar {
+  height: 10px;
+  display: block;
+}
+.card__container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.card {
+  padding: 30px;
+  position: relative;
+  padding-right: 5px;
+}
+
+.card__badge {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.card__pic {
+  height: 350px;
+}
+
+.card__rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card__rating > *:not(:last-child) {
+  margin-right: 3px;
+}
+
+.card__star {
+  height: 13px;
+}
+
+.card__ellipse {
+  height: 3px;
+}
+.card__rating > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__rating p > *:not(:last-child) {
+  margin-right: 4px;
+}
+
+.card__rating span:not(:first-child) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #91be9b;
+}
+
+.card__rating span > *:not(:last-child) {
+  margin-right: 3px;
+}
+
+.card__price span {
+  font-weight: 600;
+}
+
+@media (max-width: 550px) {
+  .App {
+    max-width: 400px;
+  }
+
+  .card__pic {
+    height: 250px;
+  }
+}
+@media (max-width: 450px) {
+  .App {
+    max-width: 300px;
+  }
+
+  .hero__gridContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    /* padding: 0 40px; */
+  }
+
+  .hero__grid {
+    /* height: 200px; */
+    width: 160%;
+  }
+
+  .hero__header {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .hero__paragraph {
+    width: 70%;
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .App {
+    max-width: 250px;
+  }
+}
