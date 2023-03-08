@@ -193,6 +193,10 @@ body {
     width: 70%;
     font-size: 12px;
   }
+
+  .card__rating > p {
+    font-size: 12px;
+  }
 }
 @media (max-width: 320px) {
   .App {
