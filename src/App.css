@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 #root {
@@ -25,7 +26,6 @@ body {
 .App {
   max-width: 550px;
   box-shadow: 1px 3px 7.4564px rgba(0, 0, 0, 0.1);
-  /* background-color: white; */
 }
 
 /* NAVIGATION SECTION  */
